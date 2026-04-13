@@ -1,0 +1,24 @@
+#include"stdio.h"
+#include"stdlib.h"
+int main()
+{
+	unsigned long int id;
+	char name[35];
+	float per;
+	FILE *fp;
+	fp=fopen("ram.text","a");
+	if(fp==NULL)
+	{
+		printf("\nfile could not open");
+		exit(0);
+	}
+	printf("enter id:");
+	scanf("%lu",&id);
+	printf("enter name:");
+	scanf("%s",name);
+	printf("enter percentage:");
+	scanf("%f",&per);
+	fprintf(fp,"%lu%s%f",id,name,per);
+	return 0;
+	
+}

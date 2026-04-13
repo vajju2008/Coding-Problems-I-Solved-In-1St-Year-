@@ -1,0 +1,6 @@
+step 1:start
+step 2:assign the input pi=3.14 and r
+step 3:calculate the area and of the circle<pi*r^2
+step 4:calculate the circumference  of the circle < 2*pi*r
+step 5:display the area and circumference of the circle
+step 5:stop 
