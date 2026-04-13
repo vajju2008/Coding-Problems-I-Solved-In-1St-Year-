@@ -1,0 +1,12 @@
+from turtle import*
+bg_color ("yellow")
+color ("red")
+begin_fill()
+pen_size (3)
+left (50)
+foward (133)
+circle (50,200)
+right (140)
+circle (50,200)
+foward (133)
+end_fill()
