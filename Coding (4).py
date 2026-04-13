@@ -1,0 +1,1 @@
+a company maintains a list of employee salaries in a list some entries and invalid stored as  NAor write a python code using for loop totransverse the list and calcultee the list and calculate the total off valid salaries skipping invalid entries using continue

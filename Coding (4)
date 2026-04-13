@@ -1,0 +1,37 @@
+lags ["ERROR:Disk full at 10:30",
+"INFO:User login at11:00",
+"WARNING:CUP high at 11:30"
+"ERROR:Disk full at 12:30"
+"ERROR:Disk full at 1:30"
+WARNING:CUP high at 2:30"]
+error_count=0
+Info_count=0
+waring_count=0
+timestamp=""
+for line in logs
+  print(line)
+  if "ERROR" in line:
+    error_count+=1
+  elif "INFO" in line:
+     INFO_count+=1
+     elif "WARNING" in line:
+   WARNING_count+=1
+timestamp+=line(-5:)+","
+if error_count>waring_count and error_count>Info_count:
+  most_frequent="ERROR'
+elif waring_count>Info_count and waring_count and error_count>:
+ most_frequent="waring"
+else:
+most_frequent=Info
+print(summary log details:")
+print(ERROR R count :",error_count)
+print(INFO count ;", info_count)
+print(WARN count:",waring_count)
+print("Most frequent:",most frequent)
+print (time stamps:",timestamp)
+
+
+
+
+
+

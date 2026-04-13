@@ -1,0 +1,79 @@
+   #include<stdio.h>
+   #include<stdio.h>
+   struct node{
+   	int data;
+   	struct node*next;
+   	struct node*prev;
+   };
+   struct node*head==NULL;
+   void insrtionbeg();
+            void insertionlast();
+                  void insertionspec();
+                         void deletbeg();
+                                  void deletlast();//[||###++===>==--
+                         void deletspec();
+                  void display();
+            void search();
+   int main()
+   {
+   	int choice=0;
+   	    while(choice!=9){
+   		             printf("\n1.insert at beginning\n2.insert at last\n3.insert at specified\n4.deletion at begin\n5.deletion at last\n6.deletion at specified\n7.display\n8.search");
+   		                printf("\nenter your choice");
+   		                scanf("%d",&choice);
+   		                switch(choice)
+   		                {
+   		                	                            case 1:insertionbeg();//
+   		                	break;
+   		                	                            case 2:inserionlast();
+   		                	break;
+   		                	                                          case 3:insertionspec();
+   		                	break;
+   		                	                                    case 4:deletbeg();
+   		                	break;
+   		                	                             case 5:deletlast();
+   		                	break;
+   		                	                       case 6:deletspec();
+   		                	break;
+   		                	                  case 7:display();
+   		                	break;
+   		                	           case 8:search();
+   		                	break;
+   		                	           default("please enter valid choice..");
+   		                	
+						}
+					
+	   }
+   }
+   void insertionbeg()
+   {
+   	   struct node*newnode;
+   	     int x;
+   	         newnode=(struct node*)malloc(size of(struct node));
+   	             printf("\nenter data value");
+   	                 scanf("%d",&x);
+   	                      if(head==NULL)
+	   {
+	                      newnode->next=NULL;
+	   	                            newnode->prev=NULL;
+	   	                                     newnode->data=x;
+	   	                                                    head=newnode;
+	   }
+	                                                                         else//[||###++===>==--
+	   {
+	   	                                                    newnode->data=x;
+	   	                                     newnode->prev=NULL;
+	   	                                        newnode->next=head;
+	   	                            head->prev=newnode;
+	   	                 head=newnode;
+	   }
+	   printf("\nnode insererted");
+   }
+   void insertionlast()
+   {
+   	        struct node*newnode,*temp;
+   	           int x;
+   	              newnode=(struct node*)malloc(size of(struct node));
+   	                  printf("\nenter value");
+   	                    scanf("%d",&x);
+   }

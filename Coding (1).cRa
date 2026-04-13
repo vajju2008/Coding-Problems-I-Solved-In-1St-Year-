@@ -1,0 +1,22 @@
+#include"stdio.h"
+#include"stdlib.h"
+int main()
+{
+	unsigned long int id;
+	char name[32];
+	float per;
+	int i=0;
+	FILE *fp;
+	fp=fopen("ram.txt","r");
+	if(fp==NULL)
+	{
+		printf("\nfile could not open");
+		exit(0);
+	}
+	while(i<2)
+	{
+	fscanf(fp,"%lu%s%f",&id,name,&per);
+	printf("%lu %s %f",id,name,per);
+	i++;
+}
+}
